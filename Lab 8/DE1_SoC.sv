@@ -59,7 +59,7 @@ module DE1_SoC(CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, GPIO
 	
 	ledMatrixDriver mDriver (dclk, red_array, green_array, GPIO_0[27:20], GPIO_0[35:28], GPIO_0[19:12]);
 	
-	logic extraPoint;
+	logic extraPoint; 
 	crashOrNot stat (dclk, reset, active, red_array[0], green_array[0], gameOver, extraPoint);
 	
 	logic pp0, pp1, pp2;
